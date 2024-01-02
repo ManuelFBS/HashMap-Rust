@@ -5,7 +5,9 @@ edition = "2021"
 
 [[bin]]
 # path = "src/app.rs"
-path = "src/exercise02.rs"
+# path = "src/exercise.rs"
+# path = "src/exercise02.rs"
+path = "src/exercise03.rs"
 name = "rustmap"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
