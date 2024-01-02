@@ -12,7 +12,7 @@ Donde 'K' es el key (clave) y 'V' es el value (valor).
 
 #
 
-En cuanto a los archivos app.rs, exercise.rs, exercise02.rs:
+En cuanto a los archivos app.rs, exercise.rs, exercise02.rs (src/):
 
 - app.rs: Explicación del HashMap, inserción y eliminación de valores.
 
