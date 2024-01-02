@@ -43,9 +43,7 @@ fn car_factory(order: i32, miles: u32) -> Car {
     // Colores válidos = 1, 2, 3 o 4...
     // if color > 4, reduce el color para un ídice válido...
     let mut color = order as usize;
-    if color > 4 {
-        // color = 5 --> index 1, color = 6 --> 2,
-        // color = 7 --> 3, color = 8 --> 4...
+    while color > 4 {
         color = color - 4;
     }
 
@@ -85,24 +83,21 @@ fn main() {
 
     // Inicializando con 0 millas...
     let mut miles = 0;
-    // Se inicializa variable contadora...
-    let mut order = 1;
 
     // Se declara un car como mutable "Car" struct...
     let mut car: Car;
 
-    while order < 7 {
+    for order in 1..12 {
         // Se llama a car_factory para realizar
         // los pedidos...
         car = car_factory(order, miles);
         orders.insert(order, car);
-        println!("Car order {}: {:?}", order, orders.get(&order));
+        println!("Car order: {}: {:?}", order, orders.get(&order));
+
         if miles == 2100 {
             miles = 0;
         } else {
             miles = miles + 700;
         }
-
-        order = order + 1;
     }
 }
