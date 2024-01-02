@@ -23,3 +23,10 @@ los mismas y posterior printing por pantalla (consola).
 - exercise02.rs: Continuación del ejercicio anterior, pero aplicando bucles (while), con la finalidad
 de optimizar los pedidos (y por supuesto el código también). Esto se puede apreciar al hacer una
 comparación entre ambos códigos.
+
+- exercise03.rs: Adaptación del ejercicio anterior, para realizar una cantidad mayor de órdenes
+(pedidos) de "automóviles". El bucle 'while' es sustituído por un bucle 'for' para un número mayor
+(y dterminado) para la automatización de los pedidos. A su vez, se realizó una modificación en
+la función "car_factory", en la cual se sustituyó el condicional 'if' (para evitar desbordamientos en
+en el valor de 'color') por el bucle 'while', para así poder ejecutar órdenes de automóviles superiores
+a 8 (un valor anteriormente predeterminado, valga la redundancia).
