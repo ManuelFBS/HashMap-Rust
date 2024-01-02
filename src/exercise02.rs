@@ -105,10 +105,4 @@ fn main() {
 
         order = order + 1;
     }
-    // Se ordenan 6 autos, incementando "order"
-    // para cada requisición...
-    // Orden para el auto #1: Usado, Techo rígido...
-    // car = car_factory(order, 1000);
-    // orders.insert(order, car);
-    // println!("Car order {}: {:?}", order, orders.get(&order));
 }
